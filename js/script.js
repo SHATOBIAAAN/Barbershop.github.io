@@ -1,7 +1,7 @@
-var link = document.querySelector(".login-link");
+var link = document.querySelector(".nav__link--login");
 
-var popup = document.querySelector(".modal-login");
-var close = popup.querySelector(".modal-close");
+var popup = document.querySelector(".modal--login");
+var close = popup.querySelector(".modal__close");
 
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]");
@@ -57,10 +57,10 @@ window.addEventListener("keydown", function (evt) {
 	}
 });
 
-var mapLink = document.querySelector(".contacts-button-map");
+var mapLink = document.querySelector(".btn--map");
 
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
+var mapPopup = document.querySelector(".modal--map");
+var mapClose = mapPopup.querySelector(".modal__close");
 
 mapLink.addEventListener("click", function (evt) {
 	evt.preventDefault();
